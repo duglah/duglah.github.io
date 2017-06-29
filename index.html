@@ -8,7 +8,27 @@ title: Long Haul
   <ul class="posts noList">
     {% for post in paginator.posts %}
       <li>
-        <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
+        <span class="date">
+
+          {% assign m = post.date | date: "%-m" %}
+          {{ post.date | date: "%-d" }}
+          {% case m %}
+            {% when '1' %}Januar
+            {% when '2' %}Februar
+            {% when '3' %}M&auml;rz
+            {% when '4' %}April
+            {% when '5' %}Mai
+            {% when '6' %}Juni
+            {% when '7' %}Juli
+            {% when '8' %}August
+            {% when '9' %}September
+            {% when '10' %}Oktober
+            {% when '11' %}November
+            {% when '12' %}Dezember
+          {% endcase %}
+          {{ post.date | date: "%Y" }}
+
+        </span>
         <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
         <p class="description">{% if post.description %}{{ post.description | strip_html | strip_newlines | truncate: 250 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 250 }}{% endif %}</p>
         <p><a href="https://philippmanstein.com{{ post.url }}#disqus_thread">0 Kommentare</a></p>
