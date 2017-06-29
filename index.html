@@ -1,15 +1,27 @@
-<html>
-<header>
-<meta charset="utf-8">
-<title>Hello World</title>
-<link rel="stylesheet" href="main.css" type="text/css" media="all">
-<link rel="shortcut icon" href="favicon.ico">
-</header>
-<body>
-<h1>Welcome!</h1>
+---
+layout: default
+title: Long Haul
+---
 
-<a href="http://www.graphicguestbook.com/magicphil">Guestbook</a>
-
-<marquee><img src="https://media.giphy.com/media/zZRrQuu5Ibw9a/giphy.gif"/>Site is under construction!<img src="https://media.giphy.com/media/zZRrQuu5Ibw9a/giphy.gif"/></marquee>
-</body>
-</html>
+<div class="home" id="home">
+  <h1 class="pageTitle">Blog</h1>
+  <ul class="posts noList">
+    {% for post in paginator.posts %}
+      <li>
+        <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
+        <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+        <p class="description">{% if post.description %}{{ post.description | strip_html | strip_newlines | truncate: 250 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 250 }}{% endif %}</p>
+        <p><a href="https://philippmanstein.com{{ post.url }}#disqus_thread">0 Kommentare</a></p>
+      </li>
+    {% endfor %}
+  </ul>
+  <!-- Pagination links -->
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous button__outline">&gt;</a> 
+    {% endif %}
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next button__outline">&lt;</a>
+    {% endif %}
+  </div>
+</div>

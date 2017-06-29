@@ -1,1 +1,23 @@
-theme: jekyll-theme-minimal
+title: Philipp's Blog
+description: Blog über IoT, Xamarin, C# und 3D Druck
+
+url: https://philippmanstein.com
+baseurl: ""
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
+
+markdown: kramdown
+highlighter: rouge
+gems: [jekyll-paginate]
+paginate: 5
+
+navigation:
+ - title: Blog
+   url: /index.html
+ - title: Über mich
+   url: /about
+
+
+social:
+   github: duglah
+   twitter: grillipp
