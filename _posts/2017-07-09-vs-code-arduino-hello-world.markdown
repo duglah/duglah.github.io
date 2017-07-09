@@ -5,18 +5,17 @@ date:   2017-07-09
 image: blog/arduinovsstudiomac.jpg
 ---
 
-Visual Studio Code überzeugt nicht nur wegen seiner Einfachheit und Crossplattform-Fähigkeit, sondern auch seit kurzem gibt es
-ein Arduino Plugin von Microsoft. Jetzt können auch Projekte für den beliebten Micro Controller und seine Klone in einer komfortablen IDE realisiert werden.
+Visual Studio Code überzeugt nicht nur wegen seiner Einfachheit und Crossplattform-Fähigkeit, sondern auch seit kurzem gibt es ein Arduino Plugin von Microsoft. Jetzt können auch Projekte für den beliebten Micro Controller und seine Klone in einer komfortablen IDE realisiert werden.
 
 # Installation VS Code
 
 Visual Studio Code kann für Mac, Windows und Linux [hier](https://code.visualstudio.com/download) heruntergeladen werden. Für den Mac entpackt ihr einfach die Zip und zieht die entpackte Visual Studio Code.app in eure Programme.
 
-# Installation Arudino Plugin
+# Installation Arduino Plugin
 
-## Download Arudino IDE
+## Download Arduino IDE
 
-Die Arudino IDE wird nicht komplett abgelöst, sie wird weiterhin benötigt, daher nicht deinstallieren oder von [hier](https://www.arduino.cc/en/main/software#download) downloaden und installieren, falls deine Version vor 1.6.x ist.
+Die Arduino IDE wird nicht komplett abgelöst, sie wird weiterhin benötigt, daher nicht deinstallieren oder von [hier](https://www.arduino.cc/en/main/software#download) downloaden und installieren, falls deine Version vor 1.6.x ist.
 Ich hatte die Version 1.6.12, musste jedoch auch updaten. Sollte bei euch auch folgender Fehler beim Uploaden erscheinen, solltet ihr auch updaten:
 
 {% highlight console %}
@@ -33,7 +32,7 @@ java.lang.NullPointerException
 ## Plugin
 
 Plugins werden über den Extension Marketplace heruntergeladen.
-Entweder öffnet ihr die Command Palette mit ⇧⌘P (Ctrl+Shift+P) und gebt `ext install vscode-arduin` ein.
+Entweder öffnet ihr die Command Palette mit ⇧⌘P (Ctrl+Shift+P) und gebt `ext install vscode-arduino` ein.
 Oder ihr öffnet den Marketplace aus der Seitenleite oder mit ⇧⌘X geöffnet (Crt+Shift+X).
 Dort sucht ihr dann nach *Arduino* und installiert die Version von Microsoft.
 
@@ -84,11 +83,11 @@ Bei mir ist es */dev/cu.usbmodem1411*.
 
 ## Upload
 
-Mit ⌥⌘U (Alternativ über die Command Palette nach *Upload* suchen) wird der Code kompiliert und auf den Arudino übertragen.
+Mit ⌥⌘U (Alternativ über die Command Palette nach *Upload* suchen) wird der Code kompiliert und auf den Arduino übertragen.
 Nun solltet ihr die eingebaute LED auf dem Board blinken sehen.
 
 <div style="text-align:center"><img src="{{ '/assets/img/blog/arduinohelloworld.gif' | prepend: site.baseurl }}" alt=""></div>
 
 # Fazit
 
-Das Plugin steckt noch in den Kinderschuhen. Code Vorschläge gibt es noch nicht,aber dafür schon mal eine Vervollständigung (Beides liefert die Arudino IDE nicht). Es wird sicherlich interessant, was hier noch in nächster Zeit kommen wird, besonders, wenn das [MXChip IoT Developer Kit](https://microsoft.github.io/azure-iot-developer-kit/) herauskommt.
+Das Plugin steckt noch in den Kinderschuhen. Code Vorschläge gibt es noch nicht,aber dafür schon mal eine Vervollständigung (Beides liefert die Arduino IDE nicht). Es wird sicherlich interessant, was hier noch in nächster Zeit kommen wird, besonders, wenn das [MXChip IoT Developer Kit](https://microsoft.github.io/azure-iot-developer-kit/) herauskommt.
