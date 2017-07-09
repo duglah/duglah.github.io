@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Visual Studio Code + Arudino"
+title:  "Visual Studio Code + Arduino"
 date:   2017-07-09
 image: blog/arduinovsstudiomac.jpg
 ---
 
 Visual Studio Code überzeugt nicht nur wegen seiner Einfachheit und Crossplattform-Fähigkeit, sondern auch seit kurzem gibt es
-ein Arudino Plugin von Microsoft. Jetzt können auch Projekte für den beliebten Micro Controller und seine Klone in einer komfortablen IDE realisiert werden.
+ein Arduino Plugin von Microsoft. Jetzt können auch Projekte für den beliebten Micro Controller und seine Klone in einer komfortablen IDE realisiert werden.
 
 # Installation VS Code
 
@@ -17,7 +17,7 @@ Visual Studio Code kann für Mac, Windows und Linux [hier](https://code.visualst
 ## Download Arudino IDE
 
 Die Arudino IDE wird nicht komplett abgelöst, sie wird weiterhin benötigt, daher nicht deinstallieren oder von [hier](https://www.arduino.cc/en/main/software#download) downloaden und installieren, falls deine Version vor 1.6.x ist.
-Ich hatte die Version 1.6.12, musste jedoch auch Updaten. Sollte bei euch auch folgender Fehler beim Uploaden erscheinen, solltet ihr auch updaten:
+Ich hatte die Version 1.6.12, musste jedoch auch updaten. Sollte bei euch auch folgender Fehler beim Uploaden erscheinen, solltet ihr auch updaten:
 
 {% highlight console %}
 [Starting] Upload sketch - Blink.ino
@@ -33,7 +33,7 @@ java.lang.NullPointerException
 ## Plugin
 
 Plugins werden über den Extension Marketplace heruntergeladen.
-Entwerder öffnet ihr die Command Palette mit ⇧⌘P (Ctrl+Shift+P) und gebt `ext install vscode-arduin` ein.
+Entweder öffnet ihr die Command Palette mit ⇧⌘P (Ctrl+Shift+P) und gebt `ext install vscode-arduin` ein.
 Oder ihr öffnet den Marketplace aus der Seitenleite oder mit ⇧⌘X geöffnet (Crt+Shift+X).
 Dort sucht ihr dann nach *Arduino* und installiert die Version von Microsoft.
 
@@ -44,7 +44,7 @@ Startet nun die VS Code neu.
 
 # Hello World
 
-Nun möchte ich ein Programm auf den Arudino bringen. Dafür bietet sich am besten das *Hello World* in der Elektronik-Welt an: Eine blinkende LED!
+Nun möchte ich ein Programm auf den Arduino bringen. Dafür bietet sich am besten das *Hello World* in der Elektronik-Welt an: Eine blinkende LED!
 
 ## Hello World erstellen
 
@@ -64,17 +64,17 @@ void loop() {
 }
 {% endhighlight %}
 
-Die Datei wird als *Blink.ino* gespeichert. Nun ändert sich das Highlighting von VS Code, da es weiß, dass **.Ino** Dateien zu Arudino gehören.
+Die Datei wird als *Blink.ino* gespeichert. Nun ändert sich das Highlighting von VS Code, da es weiß, dass **.Ino** Dateien zu Arduino gehören.
 
 ## Board auswählen
 
-Als nächstes muss eingestellt werden, für welches Board das Porgramm kompilieret werden soll. Dazu kann unten, in der rechten Ecke auf *\<Select Board Type>* geklickt werden, oder mit ⇧⌘P (Ctrl+Shift+P) nach *Arudino: Board Config* gesucht werden und im Dropdown Menü das passenden Board ausgewählt werden.
+Als nächstes muss eingestellt werden, für welches Board das Porgramm kompilieret werden soll. Dazu kann unten, in der rechten Ecke auf *\<Select Board Type>* geklickt werden, oder mit ⇧⌘P (Ctrl+Shift+P) nach *Arduino: Board Config* gesucht werden und im Dropdown Menü das passenden Board ausgewählt werden.
 
-In meinem Fall ist es *Arudino/Genuino Uno (Arudino AVR Boards)*.
+In meinem Fall ist es *Arduino/Genuino Uno (Arduino AVR Boards)*.
 
 ## Serial Port
 
-Nun sollte man den Arudino über ein USB Kabel mit dem Computer verbinden, falls er nicht schon vorher angeschlossen wurde.
+Nun sollte man den Arduino über ein USB Kabel mit dem Computer verbinden, falls er nicht schon vorher angeschlossen wurde.
 
 In der rechten unteren Ecke, neben *\<Select Board Type>*, kann nun der Serial Port für den Arduino ausgewählt werden über den Punkt *\<Select Serial Port>* oder wieder über ⇧⌘P (Ctrl+Shift+P) suchen.
 
