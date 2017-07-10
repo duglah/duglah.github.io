@@ -90,4 +90,6 @@ Nun solltet ihr die eingebaute LED auf dem Board blinken sehen.
 
 # Fazit
 
-Das Plugin steckt noch in den Kinderschuhen. Code Vorschläge gibt es noch nicht,aber dafür schon mal eine Vervollständigung (Beides liefert die Arduino IDE nicht). Es wird sicherlich interessant, was hier noch in nächster Zeit kommen wird, besonders, wenn das [MXChip IoT Developer Kit](https://microsoft.github.io/azure-iot-developer-kit/) herauskommt.
+Das Plugin steckt noch in den Kinderschuhen. Code Vorschläge gibt es noch nicht,aber dafür schon mal eine Vervollständigung (Beides liefert die Arduino IDE nicht). Es wird sicherlich interessant, was hier noch in nächster Zeit kommen wird, besonders, wenn das [MXChip IoT Developer Kit](https://microsoft.github.io/azure-iot-developer-kit/) herauskommt, besonders, da bei diesem Board das Debugging unterstützt wird.
+
+Das Arudino Plugin ist Open Source auf [Github](https://github.com/Microsoft/vscode-arduino).
