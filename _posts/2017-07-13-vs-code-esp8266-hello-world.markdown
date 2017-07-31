@@ -71,7 +71,7 @@ Und laden es auf den NodeMcu hoch.
 Wie wir sehen, sehen wir nichts 😅. Da das NodeMcu Board, im Gegensatz zum Arduino, keine eingebaute LED hat müssen wir eine LED mit zwei Kabeln und einem Widerstand mit dem Board wie folgt verbinden:
 ![Schematics NodeMCU Hello World](/assets/img/blog/esp8266helloworld.jpg)
 
-Pin D7, der im Code [GPIO](https://de.wikipedia.org/wiki/Allzweckeingabe/-ausgabe) 13 entspricht, wird mit der Anode, dem langen Beinchen, der LED verbunden. Dazwischen kommt ein Widerstand mit mindestens 165 Ω (Wir wollen nicht mehr als 20mA von einem Pin ziehen und der ESP8266 liefert 3,3V ([Ohmsches Gesetz](https://de.wikipedia.org/wiki/Ohmsches_Gesetz))). Ein höherer Widerstand geht natürlich immer, guckt einfach was ihr da habt. Die Kathode, das kurze Beinchen, der LED wird mit Ground verbunden.
+Pin D7, der im Code [GPIO](https://de.wikipedia.org/wiki/Allzweckeingabe/-ausgabe) 13 entspricht, wird mit der Anode, dem langen Beinchen, der LED verbunden. Dazwischen kommt ein Widerstand mit mindestens 275 Ω (Wir wollen nicht mehr als 12mA von einem Pin ziehen und der ESP8266 liefert 3,3V ([Ohmsches Gesetz](https://de.wikipedia.org/wiki/Ohmsches_Gesetz))). Ein höherer Widerstand geht natürlich immer, guckt einfach was ihr da habt. Die Kathode, das kurze Beinchen, der LED wird mit Ground verbunden.
 
 Hier ein Bild der kompletten Pin Belegung vom [NodeMCU Repository](https://github.com/nodemcu/nodemcu-devkit-v1.0):
 [![NodeMCU DevKit Pins](https://raw.githubusercontent.com/nodemcu/nodemcu-devkit-v1.0/master/Documents/NODEMCU_DEVKIT_V1.0_PINMAP.png)](https://github.com/nodemcu/nodemcu-devkit-v1.0)
