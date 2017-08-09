@@ -17,7 +17,8 @@ navigation:
  - title: Über mich
    url: /about/
 
-
 social:
    github: duglah
    twitter: grillipp
+
+google_analytics: "UA-102669215-1"
