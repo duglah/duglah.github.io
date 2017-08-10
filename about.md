@@ -11,7 +11,7 @@ Hier schreibe ich über Projekte und Ehrfarungsbrichte aus den Themenbereichen I
 <img style="float:right" width="250" src="{{ '/assets/img/me.jpg' | prepend: site.baseurl }}" alt="Me">
 
 Ich bin Software Entwickler bei den <a href="https://www.brickmakers.de/">BRICKMAKRS</a>. Dort mache ich hauptsächlich <a href="https://www.brickmakers.de/mobile-applikationen/">Crossplattform Apps</a>, aber auch <a href="https://www.brickmakers.de/cloudservice/">Backends auf Microsoft Azure</a>.
-Ich habe an der <a href="https://www.uni-koblenz-landau.de">Uni Koblenz</a> meinen <a href="https://kola.opus.hbz-nrw.de/files/652/Bachelor_PhilippGeitzManstein.pdf">Beachlor</a> und Master of Science in <a href="http://www.cv.uni-koblenz.de/">Computervisualistik</a> gemacht.
+Ich habe an der <a href="https://www.uni-koblenz-landau.de">Uni Koblenz</a> meinen <a href="https://kola.opus.hbz-nrw.de/files/652/Bachelor_PhilippGeitzManstein.pdf">Bachelor</a> und Master of Science in <a href="http://www.cv.uni-koblenz.de/">Computervisualistik</a> gemacht.
 
 ## Hardware
 * MacBook Pro (Retina, 15', Mitte 2014)
