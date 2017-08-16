@@ -4,3 +4,4 @@ _site
 .ruby-version
 node_modules
 Gemfile\.lock
+package-lock\.json
