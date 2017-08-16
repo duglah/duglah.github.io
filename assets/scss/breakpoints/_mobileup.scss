@@ -178,16 +178,17 @@ HEADER STYLING
 
 .header {
 	background-color: $background-color;
-	background-image: url('../img/touring.jpg');
+	background-image: url('../img/header.jpg');
 	background-size: cover;
 	background-position: center center;
+	text-shadow: 0 0 1px black;
 	color: white;
 	padding: 0;
 	height: 3em;
 
 	.container {
 		padding: 0;
-    max-width: 100%;
+    	max-width: 100%;
 	}
 
 	h1 {
@@ -199,7 +200,7 @@ HEADER STYLING
 		font-family: $sans-serif;
 		font-weight: 800;
 		text-transform: uppercase;
-
+		
 		a {
 			color: white;
 			text-decoration: none;
@@ -383,7 +384,7 @@ FOOTER STYLING
 	.container {
 		border-top: 4px solid darken(white, 15%);
 		padding-top: .5em;
-    max-width: 90%;
+    	max-width: 90%;
 	}
 
 	.copy, .footer-links {
@@ -493,5 +494,14 @@ POST LIST STYLING
 	}
 }
 
-
+/***************
+ABOUT PAGE
+***************/
+.textWithImage {
+	img {
+		width: 250px;
+		margin: 0 auto;
+		display: block;
+	}
+}
 
