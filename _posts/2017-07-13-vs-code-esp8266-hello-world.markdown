@@ -34,7 +34,13 @@ Error: esp8266: Unknown package
 [Error] Exit with code=3
 {% endhighlight %}
 
-Damit er dort auftaucht, muss man eine neue Paketquelle hinzufügen. Dies funktioniert im Moment noch nicht über das Arduino Plugin. Daher muss die Arduino IDE gestarten werden und dort die Einstellungen geöffnen werden.
+Damit er dort auftaucht, muss man eine neue Paketquelle hinzufügen. 
+Dies geht, indem man in der `Arduino: Board Config` auf *Additional URLs* klickt. 
+Nun öffnen sich die User Settings. Dort kann nun `"arduino.additionalUrls": "https://github.com/esp8266/Arduino/releases/download/2.3.0/package_esp8266com_index.json"` hinzugefügt werden.
+
+
+Alternativ kann die Paktetquelle auch über die Arduino IDE hinzugeüfgt werden.
+Dazu muss die Arduino IDE gestarten werden und dort die Einstellungen geöffnen werden.
 Dort gibt es den Menüpunkt *Additional Boards Manager URLs*, in dem die Url *https://github.com/esp8266/Arduino/releases/download/2.3.0/package_esp8266com_index.json* eingetragen wird. 
 ![Additional Boards Manager URLs](/assets/img/blog/arduinoideaddsources.jpg)
 
