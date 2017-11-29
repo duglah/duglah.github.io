@@ -10,15 +10,21 @@ Ein Arduino bietet viele Möglichkeiten mit ihm zu kommunizieren. Jedoch ist es 
 # Was ist ein ESP8266?
 
 Ein ESP8266 ist, wie ein Arduino, ein Microprozessor. Der Vorteil gegenüber einem Arduino ist, dass er eine Wlan Schnittstelle, mehr Prozessorleistung und Speicher hat.
-Ich kann empfehlen die Version *NodeMcu* des Chips zu kaufen. Es gibt ihn zum Beispiel bei [Ebay](https://www.ebay.de/sch/i.html?_nkw=nodemcu+v3+esp8266) oder bekannten chinesischen Shops, wie z.B. [Aliexpress](https://www.aliexpress.com/wholesale?SearchText=nodemcu+v3+esp8266) oder [Banggood](https://www.banggood.com/search/nodemcu-v3-esp8266.html). Diese Version hat die Stromversorgung schon geregelt und die Pins können direkt auf einem [Breadboard](https://de.wikipedia.org/wiki/Steckplatine) gesteckt werden.
+Ich kann empfehlen das Entwicklungsboard *NodeMcu* des Chips zu kaufen. Es gibt ihn zum Beispiel bei [Ebay](https://www.ebay.de/sch/i.html?_nkw=nodemcu+v3+esp8266) oder bekannten chinesischen Shops, wie z.B. [Aliexpress](https://www.aliexpress.com/wholesale?SearchText=nodemcu+v3+esp8266) oder [Banggood](https://www.banggood.com/search/nodemcu-v3-esp8266.html). Diese Version hat die Stromversorgung schon geregelt, ein Chip für die serielle Kommunikation ist vorhanden und die Pins können direkt auf einem [Breadboard](https://de.wikipedia.org/wiki/Steckplatine) gesteckt werden.
 
 Es ist möglich Programme für den Chip u.a. in [Python](https://docs.micropython.org/en/latest/esp8266/esp8266/tutorial/intro.html), [Lua](https://learn.adafruit.com/diy-esp8266-home-security-with-lua-and-mqtt/programming-the-esp8266-with-lua) oder in C zu schreiben.
-Ich möchte euch gerne zeigen, wie man mit Visual Studio Code und dem Arduino Plugin Programme für ein ESP8266 schreiben kann.
+Ich möchte euch gerne zeigen, wie man mit Visual Studio Code und dem Arduino Plugin Programme in C für den ESP8266 schreiben kann.
 
 # VS Code + Arduino Plugin + ESP8266
 
 Wie Visual Studio Code und das Arduino Plugin installiert und für den Arduino konfiguriert werden habe ich bereits [hier](https://philippmanstein.com/blog/vs-code-arduino-hello-world/) erklärt.
 Nun wollen wir es für den ESP8266 konfigurieren.
+
+## Serielle Kommunikation: CH340G Treiber
+
+Für die serielle Kommunikation hat das NodeMcu Board bereits einen Chip verbaut, den CH340G. Für diesen werden Treiber benötigt:
+
+[Mac](http://www.wch.cn/download/CH341SER_MAC_ZIP.html), [Windows](http://www.wch.cn/download/CH341SER_EXE.html) und [Linux](http://www.wch.cn/download/CH341SER_LINUX_ZIP.html)
 
 ## ESP8266 in VS Code konfigurieren
 
