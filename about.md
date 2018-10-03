@@ -11,7 +11,7 @@ Hier schreibe ich über Projekte und Ehrfarungsbrichte aus den Themenbereichen I
 <p class="textWithImage">
 <img src="{{ '/assets/img/me.jpg' | prepend: site.baseurl }}" alt="Me">
 <p>
-Ich bin Software Entwickler bei den <a href="https://www.brickmakers.de/">BRICKMAKRS</a>. Dort mache ich hauptsächlich <a href="https://www.brickmakers.de/mobile-applikationen/">Crossplattform Apps</a>, aber auch <a href="https://www.brickmakers.de/cloudservice/">Backends auf Microsoft Azure</a>.
+Ich bin Software Entwickler bei den <a href="https://www.brickmakers.de/">BRICKMAKERS</a>. Dort mache ich hauptsächlich <a href="https://www.brickmakers.de/mobile-applikationen/">Crossplattform Apps</a>, aber auch <a href="https://www.brickmakers.de/cloudservice/">Backends auf Microsoft Azure</a>.
 Ich habe an der <a href="https://www.uni-koblenz-landau.de">Uni Koblenz</a> meinen <a href="https://kola.opus.hbz-nrw.de/files/652/Bachelor_PhilippGeitzManstein.pdf">Bachelor</a> und Master of Science in <a href="http://www.cv.uni-koblenz.de/">Computervisualistik</a> gemacht.
 </p>
 </p>
